@@ -1,3 +1,12 @@
+--[[
+
+	Script Plugin
+	by Ozzypig
+	V1: October 2011
+	V2: March 2012
+
+]]
+
 ---------------------------------------
 
 pmo = PluginManager()
@@ -323,6 +332,37 @@ function onScriptChange(script)
 	for k, v in pairs(post_actions) do
 		if not script.Parent then break end
 		v(script)
+	end
+	
+	local e = getError(script)
+	if e then
+		print("error: ")
+		print(e.msg)
+		while gui:FindFirstChild("ErrorFrame") do gui.ErrorFrame:Destroy() end
+		local b = Instance.new("TextButton", gui)
+		b.Name = "ErrorFrame"
+		b.AutoButtonColor = false
+		b.Position = UDim2.new(0.5, -150, 0.5, -75)
+		b.Size = UDim2.new(0, 300, 0, 150)
+		b.BackgroundColor3 = Color3.new(0, 0, 0)
+		b.BorderColor3 = Color3.new(0.5, 0.5, 0.5)
+		b.Text = ""
+		b.MouseButton1Down:connect(function () b:Destroy() end)
+		local t = Instance.new("TextLabel", b)
+		t.Position = UDim2.new(0, 25, 0, 25)
+		t.TextColor3 = Color3.new(1, 1, 1)
+		t.TextXAlignment = "Left"
+		t.TextYAlignment = "Bottom"
+		t.Text = "SYNTAX ERROR: " .. script:GetFullName()
+		local d = Instance.new("TextLabel", b)
+		d.Position = UDim2.new(0, 25, 0, 30)
+		d.Text = e.msg
+		d.TextXAlignment = "Left"
+		d.TextYAlignment = "Top"
+		d.Size = UDim2.new(1, -50, 1, -35)
+		d.BackgroundTransparency = 1
+		d.TextColor3 = Color3.new(1, 1, 1)
+		d.TextWrap = true
 	end
 end
 
