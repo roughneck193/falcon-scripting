@@ -118,7 +118,7 @@ art=[[HOLD CONTROL AND SCROLL DOWN TO VIEW :D
       MM         MMM  MMMMMM MMM  MM      MM  MMMM  MMMM MMM      .  MMM   MMM MMM    MMMM    MMM MMMMMM    MM                    MMMM          MMM         MM       .   .MM  MM                        
       MMM       MMMM   MMMMM MMM. MMM     MM  MMM   MMM   MM        MM     MMM MMM   MMMMM    MM  MM        MM                   MM MMM          M                       MM   MM                        
       MMM       MMM    MMMMM MMM  MMM    MMMMMMM  . MMM   MMM       MM  . MMM.  MMM MMMMMM        MM                            MMM MMM                                  MM   MM                        
-      MMM       MMM     MMM        MMM  MM  MM      MM   .  MM      MMMMMMM       MMM .           MM  .        .                MM  MM                                  MM   MM                         
+      MMM       MMM     MMM        MMM  MM  MM      MM   .  MM      MMMMMMM       MMM .           MMM  .        .                MM  MM                                  MM   MM                         
        MMM       MMM   MMM          MMMMM                             MM                          MM                            MM  MM                                  MM  MM                          
       . MM        MMMMMMM                                                                         MM                           MMM  MM                                 MMM  MM                          
                      .                                                   .                        MMM                          MM  MMM                                 MM   MM                          
@@ -126,7 +126,7 @@ art=[[HOLD CONTROL AND SCROLL DOWN TO VIEW :D
                                                                                                   MMMM                        MMM MMM                                  MM MM                            
                                                                                                     MMM                       MMM MM                                  MMMMM .                           
                                                                                                     MM                        MMMMMM                                   MMM                              
-                                                                                                                              MMMMM                                    MM                               
+   IM SYCOOL FRIEND ME PLZ AND THX OZZYBIG FOR YOUR PLUGENS                                                                                                                           MMMMM                                    MM                               
                                                                                                                               MMMM                                                                      ]]
 while not _G.fsp do wait() end
 _G.fsp.art = art
